@@ -582,7 +582,7 @@ class AdsInsights(Stream):
     def job_params(self):
         start_date = get_start(self, self.bookmark_key)
 
-        buffer_days = 28
+        buffer_days = 1
         if CONFIG.get('insights_buffer_days'):
             buffer_days = int(CONFIG.get('insights_buffer_days'))
 
@@ -623,7 +623,7 @@ class AdsInsights(Stream):
             is_async=True)
         status = None
         time_start = time.time()
-        sleep_time = 10
+        sleep_time = 3
         while status != "Job Completed":
             duration = time.time() - time_start
             job = job.api_get()
@@ -683,8 +683,8 @@ class AdsInsights(Stream):
 
 INSIGHTS_BREAKDOWNS_OPTIONS = {
     'ads_insights': {"breakdowns": []},
-    'ads_insights_age_and_gender': {"breakdowns": ['age', 'gender'],
-                                    "primary-keys": ['age', 'gender']},
+    'ads_insights_age_and_gender': {"breakdowns": ['gender'],
+                                    "primary-keys": ['gender']},
     'ads_insights_country': {"breakdowns": ['country'],
                              "primary-keys": ['country']},
     'ads_insights_platform_and_device': {"breakdowns": ['publisher_platform',

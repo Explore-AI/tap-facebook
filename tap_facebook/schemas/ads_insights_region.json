@@ -4,17 +4,72 @@
     "object"
   ],
   "properties": {
-    "unique_actions": {"$ref": "ads_action_stats.json"},
-    "actions": {"$ref": "ads_action_stats.json"},
-    "action_values": {"$ref": "ads_action_stats.json"},
-    "outbound_clicks": {"$ref": "ads_action_stats.json"},
-    "unique_outbound_clicks": {"$ref": "ads_action_stats.json"},
-    "video_30_sec_watched_actions": {"$ref": "ads_action_stats.json"},
-    "video_p25_watched_actions": {"$ref": "ads_action_stats.json"},
-    "video_p50_watched_actions": {"$ref": "ads_action_stats.json"},
-    "video_p75_watched_actions": {"$ref": "ads_action_stats.json"},
-    "video_p100_watched_actions": {"$ref": "ads_action_stats.json"},
-    "video_play_curve_actions": {"$ref": "ads_histogram_stats.json"},
+    "unique_actions": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "actions": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "action_values": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "outbound_clicks": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "unique_outbound_clicks": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "video_30_sec_watched_actions": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "video_p25_watched_actions": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "video_p50_watched_actions": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "video_p75_watched_actions": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "video_p100_watched_actions": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "video_play_curve_actions": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "clicks": {
       "type": [
         "null",
@@ -37,40 +92,8 @@
     "website_ctr": {
       "type": [
         "null",
-        "array"
-      ],
-      "items": {
-        "type": [
-          "null",
-          "object"
-        ],
-        "properties": {
-          "value": {
-            "type": [
-              "null",
-              "number"
-            ]
-          },
-          "action_destination": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "action_target_id": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "action_type": {
-            "type": [
-              "null",
-              "string"
-            ]
-          }
-        }
-      }
+        "string"
+      ]
     },
     "unique_inline_link_click_ctr": {
       "type": [
@@ -111,28 +134,8 @@
     "cost_per_unique_action_type": {
       "type": [
         "null",
-        "array"
-      ],
-      "items": {
-        "type": [
-          "null",
-          "object"
-        ],
-        "properties": {
-          "value": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "action_type": {
-            "type": [
-              "null",
-              "string"
-            ]
-          }
-        }
-      }
+        "string"
+      ]
     },
     "inline_post_engagement": {
       "type": [
@@ -203,28 +206,8 @@
     "cost_per_action_type": {
       "type": [
         "null",
-        "array"
-      ],
-      "items": {
-        "type": [
-          "null",
-          "object"
-        ],
-        "properties": {
-          "value": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "action_type": {
-            "type": [
-              "null",
-              "string"
-            ]
-          }
-        }
-      }
+        "string"
+      ]
     },
     "unique_link_clicks_ctr": {
       "type": [
